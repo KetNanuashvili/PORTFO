@@ -1,0 +1,5 @@
+:host ::ng-deep .nav-link{
+    font-size: 24px;
+    width: 500;
+    color: #E6F7FF;
+}
