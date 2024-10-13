@@ -1,20 +1,27 @@
-<div header style="background-color: rgba(128, 128, 128, 0.5); opacity: 0.5; padding: 5px;">
-    <nav>
-        <div class="container">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a href="" class="nav-link styles " routerLink="/home" routerLinkActive="text-dark">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link styles " routerLink="/portfolio" routerLinkActive="text-dark">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link styles " routerLink="/resume" routerLinkActive="text-dark">Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link styles " routerLink="/contact" routerLinkActive="text-dark">Contact</a>
-                </li>
-            </ul>
+<div class="header" [ngClass]="{'dark-background': isScrolled}">
+    <div class="profile-section">
+        <h2>Ketevan Nanuashvili</h2>
+        <div class="circle">
+            <img src="assets/portfolio/myPic.jpg" alt="Profile picture">
         </div>
+    </div>
+    <nav>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/resume" routerLinkActive="active">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+            </li>
+        </ul>
     </nav>
+    <div class="resume-box">
+        <h5>My Resume</h5>
+    </div>
 </div>
