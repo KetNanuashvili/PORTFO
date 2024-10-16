@@ -1,103 +1,101 @@
-<!-- <div class="container text-center">
-    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">
+
+
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border section-button" style="animation-delay: 2.5s;">
         Download PDF Resume
     </button>
     <div class="pb-2">
-        <accordion [isAnimated]="true" class="shadow">
-            <accordion-group [(isOpen)]="isWorkExperienceOpen">
-                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
-                    <div style="visibility:hidden;"> ></div>
-                    <div class="btn-link"> Work Experience</div>
-                    <div style="width:10.95px">
-                        <div *ngIf="!isWorkExperienceOpen" style="color:white">></div>
-                        <div  *ngIf="isWorkExperienceOpen"  style="color:white">v</div>
+        <div class="accordion">
+            <div class="section">
+                <button (click)="isWorkExperienceOpen = !isWorkExperienceOpen" class="btn section-button justify-content-between d-flex w-100" style="animation-delay: 4s;">
+                    <div class="btn-link">Work Experience</div>
+                    <div class="toggle-icon">
+                        <span *ngIf="!isWorkExperienceOpen">></span>
+                        <span *ngIf="isWorkExperienceOpen">v</span>
                     </div>
-                   
                 </button>
-                <div style="text-align: left">
+                <div *ngIf="isWorkExperienceOpen" [ngClass]="{'show': isWorkExperienceOpen, 'hide': !isWorkExperienceOpen}" class="content" style="animation: slideIn 0.6s ease forwards;">
                     <h2 class="mb-0">Corporate Credit Administrator</h2>
                     <h3 class="text-primary">TBC Bank</h3>
                     <ul>
-                        <li>Issues Jul 2021 . Expired Aug 2024</li>
+                        <li>Issued Jul 2021. Expires Aug 2024</li>
                     </ul>
                 </div>
-            </accordion-group>
-            <accordion-group [(isOpen)]="isEducationOpen">
-                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
-                    <div style="visibility:hidden;"> ></div>
-                    <div class="btn-link"> Education</div>
-                    <div style="width:10.95px">
-                        <div *ngIf="!isEducationOpen" style="color:white">></div>
-                        <div  *ngIf="isEducationOpen"  style="color:white">v</div>
+            </div>
+
+            <div class="section">
+                <button (click)="isEducationOpen = !isEducationOpen" class="btn section-button justify-content-between d-flex w-100" style="animation-delay: 4.1s;">
+                    <div class="btn-link">Education</div>
+                    <div class="toggle-icon">
+                        <span *ngIf="!isEducationOpen">></span>
+                        <span *ngIf="isEducationOpen">v</span>
                     </div>
                 </button>
-                <div style="text-align: left">
-                    <h2 class="mb-0">Bachelor's of faculty of Law</h2>
+                <div *ngIf="isEducationOpen" [ngClass]="{'show': isEducationOpen, 'hide': !isEducationOpen}" class="content" style="animation: slideIn 0.6s ease forwards;">
+                    <h2 class="mb-0">Bachelor's of Faculty of Law</h2>
                     <h3 class="text-primary">Tbilisi State University</h3>
                     <ul>
                         <li>Graduated from Tbilisi State University in August 2020</li>
                     </ul>
                 </div>
-             
-            </accordion-group>
-            <accordion-group [(isOpen)]="CertificationsOpen">
-                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
-                    <div style="visibility:hidden;"> ></div>
-                    <div class="btn-link"> Certifications</div>
-                    <div style="width:10.95px">
-                        <div *ngIf="!CertificationsOpen" style="color:white">></div>
-                        <div  *ngIf="CertificationsOpen"  style="color:white">v</div>
+            </div>
+
+            <div class="section">
+                <button (click)="CertificationsOpen = !CertificationsOpen" class="btn section-button justify-content-between d-flex w-100" style="animation-delay: 4.2s;">
+                    <div class="btn-link">Certifications</div>
+                    <div class="toggle-icon">
+                        <span *ngIf="!CertificationsOpen">></span>
+                        <span *ngIf="CertificationsOpen">v</span>
                     </div>
                 </button>
-                <div style="text-align: left">
-                    <h2 class="mb-0">Certificate of achievement in FRONT-END COURSE </h2>
+                <div *ngIf="CertificationsOpen" [ngClass]="{'show': CertificationsOpen, 'hide': !CertificationsOpen}" class="content" style="animation: slideIn 0.6s ease forwards;">
+                    <h2 class="mb-0">Certificate of Achievement in FRONT-END COURSE</h2>
                     <h3 class="text-primary">Academy of Digital Industries</h3>
                     <ul>
-                        <li>Issues Jul 2022 . Expired Aug 2022</li>
+                        <li>Issued Jul 2022. Expires Aug 2022</li>
                     </ul>
-                </div>
-                <div style="text-align: left">
-                    <h2 class="mb-0">Certificate of achievement JAVASCRIPT COURSE </h2>
+                    <h2 class="mb-0">Certificate of Achievement in JAVASCRIPT COURSE</h2>
                     <h3 class="text-primary">Academy of Digital Industries</h3>
                     <ul>
-                        <li>Issues Sep 2022 . Expired Oct 2022</li>
+                        <li>Issued Sep 2022. Expires Oct 2022</li>
                     </ul>
                 </div>
-            </accordion-group>
-            <accordion-group [(isOpen)]="skillsOpen">
-                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
-                    <div style="visibility:hidden;"> ></div>
-                    <div class="btn-link"> Skills</div>
-                    <div style="width:10.95px">
-                        <div *ngIf="!skillsOpen" style="color:white">></div>
-                        <div  *ngIf="skillsOpen"  style="color:white">v</div>
+            </div>
+
+            <div class="section">
+                <button (click)="skillsOpen = !skillsOpen" class="btn section-button justify-content-between d-flex w-100" style="animation-delay: 4.3s;">
+                    <div class="btn-link">Skills</div>
+                    <div class="toggle-icon">
+                        <span *ngIf="!skillsOpen">></span>
+                        <span *ngIf="skillsOpen">v</span>
                     </div>
                 </button>
-                <div class="row" style="text-align: left;">
-                    <div class="col">
-                        <h3>Programing Language:</h3>
-                        <ul>
-                            <li>Javascript</li>
-                            <li>Typescript</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h3>Frameworks:</h3>
-                        <ul>
-                            <li>Angular</li>
-                            <li>React</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h3>Other Skilss:</h3>
-                        <ul>
-                            <li>Responsibility</li>
-                            <li>Ability to think logically</li>
-                        </ul>
+                <div *ngIf="skillsOpen" [ngClass]="{'show': skillsOpen, 'hide': !skillsOpen}" class="content" style="animation: slideIn 0.6s ease forwards;">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Programming Languages:</h3>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>TypeScript</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>Frameworks:</h3>
+                            <ul>
+                                <li>Angular</li>
+                                <li>React</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>Other Skills:</h3>
+                            <ul>
+                                <li>Responsibility</li>
+                                <li>Ability to think logically</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </accordion-group>
-        </accordion>
+            </div>
+        </div>
     </div>
-   
-</div> -->
+</div>

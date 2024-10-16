@@ -11,6 +11,7 @@ import { ProjectModalComponent } from './components/project-modal/project-modal.
 import { ResumeComponent } from './components/resume/resume.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { VisibilityDirectiveService } from './services/visibility-directive.service';
 
 
 @NgModule({
@@ -24,7 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProjectModalComponent,
     ResumeComponent,
 
-
+    VisibilityDirectiveService
   ],
   imports: [
     BrowserModule,

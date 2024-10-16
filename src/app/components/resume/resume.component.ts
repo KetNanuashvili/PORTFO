@@ -1,4 +1,4 @@
-import { Component, Renderer2 } from '@angular/core';
+import { Component, HostListener, Renderer2 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -12,7 +12,9 @@ export class ResumeComponent {
   CertificationsOpen:boolean=false;
   skillsOpen:boolean=false;
 
-  constructor(private titleService:Title, private renderer: Renderer2){
+  buttonsVisible = false;
+
+  constructor(private titleService:Title, private renderer: Renderer2,){
     this.titleService.setTitle('Ketevan Nanuashvili- resume');
   }
 
@@ -24,4 +26,18 @@ export class ResumeComponent {
     link.click();
     link.remove();
   }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const componentPosition = document.getElementById('your-component-id').getBoundingClientRect().top;
+    const screenPosition = window.innerHeight;
+
+    if (componentPosition < screenPosition) {
+      this.buttonsVisible = true; // Make buttons visible
+    } else {
+      this.buttonsVisible = false; // Hide buttons
+    }
+  }
+
+  
 }
