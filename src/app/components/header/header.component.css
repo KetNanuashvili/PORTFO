@@ -1,11 +1,11 @@
 .header {
-    position: fixed; /* Make the header fixed */
-    top: 0; /* Position it at the top of the viewport */
-    left: 0; /* Align it to the left */
-    right: 0; /* Stretch it to the right */
-    z-index: 1000; /* Ensure it appears above other elements */
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0; 
+    z-index: 1000; 
     
-    background-color: rgba(128, 128, 128, 0.5); /* Original background color */
+    background-color: rgba(128, 128, 128, 0.5); 
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -13,11 +13,11 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     opacity: 0.5;
-    transition: background-color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease; 
 }
 
 .header.scrolled {
-    background-color: rgba(0, 0, 0, 0.7); /* Darker background when scrolled */
+    background-color: rgba(0, 0, 0, 0.7); 
     opacity: 0;
 }
 
@@ -75,13 +75,14 @@
 .resume-box {
     width: 150px;
     height: 50px;
-    background-color: #E6F7FF;
-    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(139, 69, 19, 1), rgba(165, 42, 42, 1), rgba(128, 128, 128, 1)); /* Brown to Red to Gray */
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .resume-box:hover {

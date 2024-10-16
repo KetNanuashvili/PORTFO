@@ -11,80 +11,85 @@
         transform: translateX(0);
     }
 }
-
+.card-img-top{
+    height: 450px;
+    object-fit: cover; 
+    width: 100%;
+}
 .scroll-container {
-    overflow: hidden; /* Hide overflow for a cleaner look */
-    height: 100%; /* Full height for scrolling area */
+    overflow: hidden; 
+    height: 100%;
+    opacity: 0.7;
 }
 
 .slide-in {
-    animation: slideIn 0.8s ease forwards; /* Apply the slide-in animation */
+    animation: slideIn 0.8s ease forwards; 
 }
 
 .custom-card {
-    margin: 0 5px; /* Add some spacing between cards */
+    margin: 0 5px;
 }
 
 .custom-btn {
-    background-color: #FFD700; /* Golden color for contrast */
-    border: none; /* Remove border */
-    color: #fff; /* White text */
+    background-color: #FFD700; 
+    border: none; 
+    color: #fff; 
 }
 
 .carousel-inner img {
-    border-radius: 20px; /* Match card style with rounded corners */
+    border-radius: 20px; 
 }
 .custom-card {
-    background-color: #313333; /* Set a solid background color to the card */
-    border-radius: 10px; /* Match the corner radius */
-    overflow: hidden; /* Ensure contents stay within the card */
+    background-color: #313333; 
+    border-radius: 10px; 
+    overflow: hidden; 
 }
 .intro{
     background: linear-gradient(135deg, #313333, rgba(85, 64, 65, 0.8));
-    padding: 20px; /* Reduced padding for better fit within card */
+    padding: 20px; 
     border-radius: 10px;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 0px 10px rgba(100, 50, 100, 0.4);
-    color: #E6F7FF; /* Light color for contrast */
-    opacity: 0.95; /* Slightly higher opacity for better visibility */
+    color: #E6F7FF; 
+    opacity: 0.95; 
     font-weight: bold;
-    text-align: left; /* Align text to left */
+    text-align: left;
 }
 
 .intro h5 {
-    font-size: 1.75em; /* Adjust heading size for the card */
-    margin-bottom: 15px; /* Spacing between heading and text */
+    font-size: 1.75em; 
+    margin-bottom: 15px; 
     letter-spacing: 1px;
-    color: #b1c0c7; /* Light color for contrast */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Stronger shadow for better visibility */
+    color: #b1c0c7; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
 }
 
 .intro p {
-    font-size: 1em; /* Standard size for the paragraph */
-    margin-bottom: 20px; /* Spacing between paragraph and button */
+    font-size: 1em; 
+    margin-bottom: 20px; 
 }
 
 .custom-btn {
-    background-color: #E6F7FF; /* Golden color for contrast */
-    border: none; /* Remove border */
-    color: black; /* White text */
-    padding: 10px 20px; /* Add padding for a button */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    background: linear-gradient(135deg, rgba(139, 69, 19, 1), rgba(165, 42, 42, 1), rgba(128, 128, 128, 1)); 
+    border: none; 
+    color: black; 
+    padding: 10px 20px;
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
 }
 
 .custom-btn:hover {
-    background-color: brown; /* Darken on hover */
+    background: linear-gradient(135deg, rgba(165, 42, 42, 1), rgba(139, 69, 19, 1), rgba(128, 128, 128, 1)); 
 }
 
 .carousel-inner img {
-    border-radius: 10px; /* Match card style with rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to images */
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(255, 255, 255, 0.7); /* Background for controls */
-    border-radius: 50%; /* Rounded controls */
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 50%; 
 }
 .scroll-container {
     height: 100%;
@@ -102,4 +107,17 @@
 .carousel-item img {
     object-fit: cover;
     height: 100%;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    70% {
+        transform: translateX(-10%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
