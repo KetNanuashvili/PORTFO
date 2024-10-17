@@ -6,11 +6,12 @@ import { Component, HostListener } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  isScrolled = false;
+  isScrolled: boolean = false;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.isScrolled = window.scrollY > 500; // Check if scrolled more than 500px
-    console.log('Scroll Y:', window.scrollY, 'Scrolled:', this.isScrolled); // For debugging
+    this.isScrolled = window.scrollY > 500; // 500 პიქსელზე მეტი უნდა იყოს
+    console.log('Scrolled:', this.isScrolled); // თუ ეს ჩანს კონსოლში
   }
+  
 }

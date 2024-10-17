@@ -4,7 +4,6 @@
     left: 0;
     right: 0; 
     z-index: 1000; 
-    
     background-color: rgba(128, 128, 128, 0.5); 
     padding: 15px 30px;
     display: flex;
@@ -16,10 +15,11 @@
     transition: background-color 0.3s ease; 
 }
 
-.header.scrolled {
+.header.dark-background {
     background-color: rgba(0, 0, 0, 0.7); 
-    opacity: 0;
+    opacity: 1; 
 }
+
 
 
 
@@ -64,7 +64,7 @@
 
 .nav-link:hover {
     background-color: #E6F7FF;
-    color: rgba(50, 50, 100, 0.7);
+    background: linear-gradient(135deg, rgba(139, 69, 19, 1), rgba(165, 42, 42, 1), rgba(128, 128, 128, 1));
     border-radius: 5px;
 }
 
@@ -75,7 +75,7 @@
 .resume-box {
     width: 150px;
     height: 50px;
-    background: linear-gradient(135deg, rgba(139, 69, 19, 1), rgba(165, 42, 42, 1), rgba(128, 128, 128, 1)); /* Brown to Red to Gray */
+    background: linear-gradient(135deg, rgba(139, 69, 19, 1), rgba(165, 42, 42, 1), rgba(128, 128, 128, 1)); 
     border-radius: 5px;
     display: flex;
     align-items: center;

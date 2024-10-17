@@ -12,6 +12,7 @@ import { ResumeComponent } from './components/resume/resume.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VisibilityDirectiveService } from './services/visibility-directive.service';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { VisibilityDirectiveService } from './services/visibility-directive.serv
     ProjectModalComponent,
     ResumeComponent,
 
-    VisibilityDirectiveService
+    VisibilityDirectiveService,
+     ContactComponent
   ],
   imports: [
     BrowserModule,
