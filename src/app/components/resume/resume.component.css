@@ -1,14 +1,18 @@
 .section-button {
     background: linear-gradient(135deg, #313333, rgba(85, 64, 65, 0.8));
-    color: #E6F7FF;
+    color: #b3b3b3;
     border: none;
     border-radius: 10px;
-    padding: 10px 15px;
+    padding: 25px;
     font-weight: bold;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 0px 10px rgba(100, 50, 100, 0.4);
     transform: translateX(100%); /* Start off-screen to the right */
     opacity: 0; /* Start invisible */
     animation: buttonFadeIn 0.6s ease forwards; /* Apply button fade-in animation */
+    
+}
+.background-download{
+    background: linear-gradient(135deg, rgba(139, 69, 19, 1), rgba(165, 42, 42, 1), rgba(128, 128, 128, 1));
 }
 /* Animation for button fade-in effect */
 @keyframes buttonFadeIn {
@@ -19,5 +23,76 @@
     100% {
         transform: translateX(0); /* End at original position */
         opacity: 1; /* End visible */
+    }
+}
+/* Text Styles */
+h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+}
+.text-primary {
+    color: #7d6c6c !important;
+}
+/* Main headers */
+h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color : rgba(165, 42, 42, 1);
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* Toggle icon */
+.toggle-icon {
+    font-size: 1.2rem;
+    color: #707070;
+    transition: transform 0.2s ease;
+}
+
+.toggle-icon span {
+    font-weight: bold;
+}
+
+/* Button Text */
+.btn-link {
+    font-size: 1.1rem;
+    color: #b3b3b3;
+    font-weight: bold;
+}
+
+/* Content Text */
+ul {
+    font-size: 1rem;
+    color: #4D4D4D; /* Slightly lighter gray for regular list text */
+    line-height: 1.6;
+}
+
+li {
+    font-family: 'Verdana', sans-serif;
+}
+
+/* For finer text animation delay */
+.content {
+    font-size: 1rem;
+    color: #383838;
+    animation-delay: 2s;
+}
+
+/* Content fade-in animation */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

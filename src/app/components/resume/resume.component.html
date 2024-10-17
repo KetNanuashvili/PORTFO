@@ -1,13 +1,13 @@
 
 
 <div class="container text-center">
-    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border section-button" style="animation-delay: 2.5s;">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border section-button background-download" style="animation-delay: 1.5s;">
         Download PDF Resume
     </button>
     <div class="pb-2">
         <div class="accordion">
             <div class="section">
-                <button (click)="isWorkExperienceOpen = !isWorkExperienceOpen" class="btn section-button justify-content-between d-flex w-100" style="animation-delay: 4s;">
+                <button (click)="isWorkExperienceOpen = !isWorkExperienceOpen" class="btn section-button justify-content-between d-flex w-100" style="animation-delay: 2s;">
                     <div class="btn-link">Work Experience</div>
                     <div class="toggle-icon">
                         <span *ngIf="!isWorkExperienceOpen">></span>
@@ -24,7 +24,7 @@
             </div>
 
             <div class="section">
-                <button (click)="isEducationOpen = !isEducationOpen" class="btn section-button justify-content-between d-flex w-100" style="animation-delay: 4.1s;">
+                <button (click)="isEducationOpen = !isEducationOpen" class="btn section-button justify-content-between d-flex w-100" style="animation-delay: 2.1s;">
                     <div class="btn-link">Education</div>
                     <div class="toggle-icon">
                         <span *ngIf="!isEducationOpen">></span>
@@ -41,7 +41,7 @@
             </div>
 
             <div class="section">
-                <button (click)="CertificationsOpen = !CertificationsOpen" class="btn section-button justify-content-between d-flex w-100" style="animation-delay: 4.2s;">
+                <button (click)="CertificationsOpen = !CertificationsOpen" class="btn section-button justify-content-between d-flex w-100" style="animation-delay: 2.2s;">
                     <div class="btn-link">Certifications</div>
                     <div class="toggle-icon">
                         <span *ngIf="!CertificationsOpen">></span>
@@ -63,7 +63,7 @@
             </div>
 
             <div class="section">
-                <button (click)="skillsOpen = !skillsOpen" class="btn section-button justify-content-between d-flex w-100" style="animation-delay: 4.3s;">
+                <button (click)="skillsOpen = !skillsOpen" class="btn section-button justify-content-between d-flex w-100" style="animation-delay: 2.3s;">
                     <div class="btn-link">Skills</div>
                     <div class="toggle-icon">
                         <span *ngIf="!skillsOpen">></span>
