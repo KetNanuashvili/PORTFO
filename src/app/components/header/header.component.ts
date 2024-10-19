@@ -6,12 +6,18 @@ import { Component, HostListener } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  isScrolled: boolean = false;
+  isScrolled = false;  
+  isMenuOpen = false;  
+  openNewNav= false;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.isScrolled = window.scrollY > 500; // 500 პიქსელზე მეტი უნდა იყოს
-    console.log('Scrolled:', this.isScrolled); // თუ ეს ჩანს კონსოლში
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    this.isScrolled = scrollPosition > 1050;  
   }
-  
+
+  toggleMenu() {
+    this.openNewNav = !this.openNewNav;
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 }

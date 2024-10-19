@@ -5,8 +5,19 @@
             <img src="assets/portfolio/myPic.jpg" alt="Profile picture">
         </div>
     </div>
-    <nav>
-        <ul class="nav justify-content-center">
+    <div class="menu-toggle" (click)="toggleMenu()">
+        <div class="burger-icon" [class.hide]="isMenuOpen">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="x-icon" [class.hide]="!isMenuOpen">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+        </div>
+    </div> 
+    <nav [ngClass]="{'overlay': openNewNav, 'show-nav': openNewNav}">
+        <ul class="nav"  [ngClass]="{'expanded-box': openNewNav}">
             <li class="nav-item">
                 <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
             </li>
@@ -20,8 +31,8 @@
                 <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
             </li>
         </ul>
+        <div class="resume-box" >
+            <h5>My Resume</h5>
+        </div>
     </nav>
-    <div class="resume-box">
-        <h5>My Resume</h5>
-    </div>
 </div>
