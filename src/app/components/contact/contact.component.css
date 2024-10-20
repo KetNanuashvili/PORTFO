@@ -60,7 +60,12 @@ h3 {
     font-size: 1.5rem;
     color: #8f7a7a;
 }
-
+.contact{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: rgb(78, 16, 8);
+}
 
 @media (max-width: 768px) {
     .contact-container {

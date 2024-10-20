@@ -3,12 +3,17 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 .container {
-  margin-top: 200px;
+  margin-top: 70px;
   display: flex;
-  height: 800px;
+  height: 700px;
   width: 1400px;
-  top: 60px;
+  /* top: 60px; */
   position: relative;
+}
+.portfolio{
+  text-align: center;
+  margin-top: 120px;
+  color: rgb(78, 16, 8);;
 }
 .card {
   display: flex;
@@ -88,7 +93,7 @@ body {
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    height: 100vh; 
+    /* height: 100vh;  */
     width: 100%; 
     position: relative;
   }

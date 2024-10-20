@@ -53,6 +53,7 @@
 .nav {
     display: flex; 
     gap: 20px;
+    margin-right: 20px;
 }
 
 .nav-link {
@@ -188,6 +189,7 @@ nav.overlay {
         display: none; 
         flex-direction: column;
         align-items: flex-start; 
+        
     }
 
     nav.show-nav {
@@ -208,6 +210,7 @@ nav.overlay {
     .expanded-box{
         display: flex;
         flex-direction: column;
+        margin-right: 0px;
     }
 
 }

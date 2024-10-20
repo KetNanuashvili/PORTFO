@@ -10,7 +10,7 @@
     position: relative;
     max-width:800px; 
     width: 95%;
-    margin: 200px auto; 
+    margin: 200px auto 100px; 
     transform: translateX(100%);
     animation: slideIn 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
 }

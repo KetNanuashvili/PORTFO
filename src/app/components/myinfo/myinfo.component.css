@@ -108,6 +108,11 @@
     object-fit: cover;
     height: 100%;
 }
+.portfolioH2{
+    text-align: center;
+    margin-bottom: 50px;
+    color:  rgb(78, 16, 8);
+}
 @keyframes slideIn {
     0% {
         transform: translateX(100%);

@@ -12,10 +12,15 @@
     
 }
 .background-download{
-    margin-top: 200px;
+   margin-top: 50px;
     background: linear-gradient(135deg, rgba(139, 69, 19, 1), rgba(165, 42, 42, 1), rgba(128, 128, 128, 1));
 }
-
+.portfolioH2{
+    margin-top: 100px;
+    margin-top: 130px;
+    color: rgb(78, 16, 8);
+    font-size: 24px;
+}
 @keyframes buttonFadeIn {
     0% {
         transform: translateX(100%); 
@@ -35,7 +40,6 @@ h2, h3 {
 .text-primary {
     color: #7d6c6c !important;
 }
-
 h2 {
     font-size: 1.6rem;
     margin-top: 10px;
@@ -44,24 +48,19 @@ h2 {
     margin-bottom: 0.5rem;
     font-style: italic;
 }
-
 h3 {
     font-size: 1.3rem;
     font-weight: 600;
     color: white;
 }
-
 .toggle-icon {
     font-size: 1.2rem;
     color: #707070;
     transition: transform 0.2s ease;
 }
-
 .toggle-icon span {
     font-weight: bold;
 }
-
-
 .btn-link {
     font-size: 1.1rem;
     color: #b3b3b3;
@@ -100,7 +99,7 @@ li {
 
 @media (max-width: 500px){
     .background-download {
-        margin-top: 100px;
+        margin-top: 70პx;
        
     }
     h2 {
