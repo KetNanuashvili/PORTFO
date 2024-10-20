@@ -14,7 +14,7 @@
     border-radius: 10px;
     opacity: 0.5;
     transition: background-color 0.3s ease; 
-    /* position: relative; */
+    position: relative;
 }
 
 .header.dark-background {
@@ -210,4 +210,16 @@ nav.overlay {
         flex-direction: column;
     }
 
+}
+@media (max-width: 500px) {
+    .profile-section h2 {
+        margin-top: 10px;
+    font-size: 20px;
+    }
+    .circle{
+        margin-left: -25px;
+    }
+    nav.show-nav{
+        margin-top: 26px;
+    }
 }

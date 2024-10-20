@@ -121,3 +121,17 @@
         transform: translateX(0);
     }
 }
+@media (max-width: 780px ){
+    .carousel-item {
+        margin-top: 100px;
+        height: auto;
+  
+      }
+}
+@media(max-width: 500px){
+  
+    .card-img-top {
+      height: 260px;
+    }
+  
+    }

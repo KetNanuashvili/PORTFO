@@ -15,18 +15,18 @@
     margin-top: 200px;
     background: linear-gradient(135deg, rgba(139, 69, 19, 1), rgba(165, 42, 42, 1), rgba(128, 128, 128, 1));
 }
-/* Animation for button fade-in effect */
+
 @keyframes buttonFadeIn {
     0% {
-        transform: translateX(100%); /* Start off-screen to the right */
-        opacity: 0; /* Start invisible */
+        transform: translateX(100%); 
+        opacity: 0; 
     }
     100% {
-        transform: translateX(0); /* End at original position */
-        opacity: 1; /* End visible */
+        transform: translateX(0); 
+        opacity: 1; 
     }
 }
-/* Text Styles */
+
 h2, h3 {
     font-family: 'Arial', sans-serif;
     color: white;
@@ -35,7 +35,7 @@ h2, h3 {
 .text-primary {
     color: #7d6c6c !important;
 }
-/* Main headers */
+
 h2 {
     font-size: 1.6rem;
     font-weight: 700;
@@ -50,7 +50,6 @@ h3 {
     color: white;
 }
 
-/* Toggle icon */
 .toggle-icon {
     font-size: 1.2rem;
     color: #707070;
@@ -61,17 +60,16 @@ h3 {
     font-weight: bold;
 }
 
-/* Button Text */
+
 .btn-link {
     font-size: 1.1rem;
     color: #b3b3b3;
     font-weight: bold;
 }
 
-/* Content Text */
 ul {
     font-size: 1rem;
-    color: #4D4D4D; /* Slightly lighter gray for regular list text */
+    color: #4D4D4D; 
     line-height: 1.6;
 }
 
@@ -79,14 +77,15 @@ li {
     font-family: 'Verdana', sans-serif;
 }
 
-/* For finer text animation delay */
 .content {
     font-size: 1rem;
     color: #383838;
     animation-delay: 2s;
 }
 
-/* Content fade-in animation */
+.row{
+    margin-top: 60px;
+}
 @keyframes slideIn {
     0% {
         opacity: 0;
@@ -95,5 +94,26 @@ li {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 500px){
+    .background-download {
+        margin-top: 100px;
+       
+    }
+    h2 {
+        font-size: 0.9rem;
+        margin-top: 10px;
+      
+    }
+    h3{
+        font-size: 0.8rem;
+    }
+    li{
+        font-size: 12px;
+    }
+    .row{
+        margin-top: 40px;
     }
 }
