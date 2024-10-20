@@ -38,6 +38,7 @@ h2, h3 {
 
 h2 {
     font-size: 1.6rem;
+    margin-top: 10px;
     font-weight: 700;
     color : rgba(165, 42, 42, 1);
     margin-bottom: 0.5rem;

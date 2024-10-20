@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +10,11 @@ export class HeaderComponent {
   isMenuOpen = false;  
   openNewNav= false;
 
+
+  constructor(private renderer: Renderer2 ){
+
+  }
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
@@ -19,5 +24,14 @@ export class HeaderComponent {
   toggleMenu() {
     this.openNewNav = !this.openNewNav;
     this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  DownloadFile(){
+    const link = this.renderer.createElement('a');
+    link.setAttribute('target', '_blank');
+    link.setAttribute('href', 'assets/resume/KetevanNanuashvili.pdf');
+    link.setAttribute('download', 'KetevanNanuashvili.pdf');
+    link.click();
+    link.remove();
   }
 }

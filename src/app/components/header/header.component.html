@@ -32,8 +32,12 @@
                 <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
             </li>
         </ul>
-        <div class="resume-box" >
-            <h5>My Resume</h5>
+        <div class="resume-box" (click)=" DownloadFile()" >
+            <h5> 
+                <a target="_blank" style="text-decoration: none; color: inherit;">
+                    My Resume
+                </a>
+            </h5>
         </div>
     </nav>
 </div>
