@@ -32,11 +32,13 @@ import { ContactComponent } from './components/contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
- 
+    BrowserAnimationsModule,
+    AppRoutingModule
   
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
