@@ -13,6 +13,9 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VisibilityDirectiveService } from './services/visibility-directive.service';
 import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 
 @NgModule({
@@ -27,13 +30,16 @@ import { ContactComponent } from './components/contact/contact.component';
     ResumeComponent,
 
     VisibilityDirectiveService,
-     ContactComponent
+     ContactComponent,
+     FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
+
   
   ],
   providers: [],
