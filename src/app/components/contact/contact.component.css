@@ -1,4 +1,4 @@
-/* Main Container Styles */
+
 .contact-container {
     display: flex;
     justify-content: space-between; 
@@ -8,6 +8,7 @@
     background: linear-gradient(135deg, #313333, rgba(85, 64, 65, 0.8));
     border-radius: 10px; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 100px;
 }
 
 
