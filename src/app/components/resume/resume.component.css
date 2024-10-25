@@ -17,7 +17,7 @@
 }
 .portfolioH2{
     margin-top: 100px;
-    margin-top: 130px;
+    margin-top: 100px;
     color: rgb(78, 16, 8);
     font-size: 24px;
 }
@@ -116,4 +116,8 @@ li {
     .row{
         margin-top: 40px;
     }
+}
+.text-center {
+    text-align: center !important;
+    margin-bottom: 100px;
 }

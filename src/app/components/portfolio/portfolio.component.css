@@ -7,30 +7,59 @@ body {
   display: flex;
   height: 700px;
   width: 1400px;
-  /* top: 60px; */
   position: relative;
 }
 .portfolio{
   text-align: center;
-  margin-top: 120px;
+  margin-top: 100px;
   color: rgb(78, 16, 8);;
+}@keyframes flip {
+  0% {
+    transform: rotateX(90deg); 
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
 }
+
 .card {
+  animation: flip 0.6s ease forwards;
+  animation-delay: 0.2s;
   display: flex;
-  flex-direction: column; 
-  justify-content: space-between; 
-  height: 600px;           
-  max-width: 400px;        
-  width: 100%;             
+  flex-direction: column;
+  justify-content: space-between;
+  height: 600px;
+  max-width: 400px;
+  width: 100%;
   background: linear-gradient(135deg, #313333, rgba(85, 64, 65, 0.8));
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #000;
   transition: 0.4s ease-out;
   position: relative;
   opacity: 0.8;
-  padding: 20px; 
-  color: #fff; 
+  padding: 20px;
+  color: #fff;
+  cursor: pointer;
+  transform: rotateX(90deg);
+  opacity: 0;
 }
+
+
+.card:nth-child(1) {
+  animation-delay: 2s;
+}
+.card:nth-child(2) {
+  animation-delay: 2.4s;
+}
+.card:nth-child(3) {
+  animation-delay: 2.8s;
+}
+.card:nth-child(4) {
+  animation-delay: 3.2s;
+}
+
 .card:not(:first-child) {
   margin-left: -50px;
 }

@@ -11,7 +11,6 @@
 }
 
 .footer > div {
-    width: 100%;
     display: flex;
     justify-content: space-between; 
     align-items: center; 
@@ -36,14 +35,9 @@
 
 .footer-text {
     display: flex;
-    align-items: center;
-    color: #E6F7FF; 
-    font-weight: bold; 
-    font-size: 16px; 
-    margin-top: auto; 
-    padding-top: 20px; 
-    width: 100%; 
-    text-align: center;
-    background-color: bisque;
+  
 
+}
+.footer-text p {
+    font-size: 20px;
 }
